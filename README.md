@@ -22,8 +22,9 @@ botを使うことで、**ユーザーには設定できない項目や、ユー
 !eval message.channel.send("送りたい内容")
 //message.delete({timeout:500})//このメッセージを自動的に消したい場合はこれを使う
 ```
-<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/eval-content.png" width="640px">
+<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/eval-content.png" width="320px">
 <br>
+
 ###### 低速モードを設定する(5秒以下も設定可)
 ```javascript
 !eval message.channel.setRatelimitPerUser(秒数)
