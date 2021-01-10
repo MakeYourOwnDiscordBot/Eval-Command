@@ -20,5 +20,5 @@ botを使うことで、**ユーザーには設定できない項目や、ユー
 
 |コマンド|スクリーンショット&説明|
 |---|---|
-|`!eval message.channel.setRatelimitPeruser(秒数)`|低速モードを設定する(5秒以下も設定可)|
+|`!eval message.channel.setRatelimitPerUser(秒数)`|低速モードを設定する(5秒以下も設定可)|
 |||
