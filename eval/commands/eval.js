@@ -5,11 +5,10 @@ module.exports = {
   ownerOnly: true,
   
   async execute(message,args,client) {
-    console.log(args)
-    let e
+
 		var code = message.content.slice(client.prefix.length+4).split(' ');
 		try {
-      e = await eval(code.join(' '));
+      await eval(args.join(' '));
 			message.react('✅');
 		} catch (error) {
 			message.channel.send({
