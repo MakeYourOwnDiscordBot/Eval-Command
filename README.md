@@ -18,7 +18,14 @@ botを使うことで、**ユーザーには設定できない項目や、ユー
 <br><br>
 ### 3.使用例
 
-|コマンド|スクリーンショット&説明|
-|---|---|
-|`!eval message.channel.setRatelimitPerUser(秒数)`|低速モードを設定する(5秒以下も設定可)<br><img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/eval-setRateLimit.png" width="640px">|
-|||
+```javascript
+!eval message.channel.setRatelimitPerUser(秒数)
+```
+低速モードを設定する(5秒以下も設定可)<br><img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/eval-setRateLimit.png" width="640px"><br>
+
+```javascript
+!eval const role = message.guild.roles.cache.find(role => role.name === 'ロール名')
+message.guild.members.fetch()
+    .then(members => Promise.all(members.map(member => member.roles.add(role))))
+```
+`'ロール名'`に入れた名前のロールをすべてのメンバーに付与する。
