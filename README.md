@@ -17,7 +17,7 @@ botを使うことで、**ユーザーには設定できない項目や、ユー
 <img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/info-folder.png" width=160px>
 <br><br>
 ### 3.使用例
-###### メッセージを送信したチャンネルに送信する。
+#### メッセージを送信したチャンネルに送信する。
 ```javascript
 !eval message.channel.send("送りたい内容")
 //message.delete({timeout:500})//このメッセージを自動的に消したい場合はこれを使う
@@ -25,13 +25,13 @@ botを使うことで、**ユーザーには設定できない項目や、ユー
 <img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/eval-content.png" width="320px">
 <br>
 
-###### 低速モードを設定する(5秒以下も設定可)
+#### 低速モードを設定する(5秒以下も設定可)
 ```javascript
 !eval message.channel.setRatelimitPerUser(秒数)
 ```
 <img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/eval-setRateLimit.png" width="640px"><br>
 
-###### `'ロール名'`に入れた名前のロールをすべてのメンバーに付与する。
+#### `'ロール名'`に入れた名前のロールをすべてのメンバーに付与する。
 ```javascript
 !eval const role = message.guild.roles.cache.find(role => role.name === 'ロール名')
 message.guild.members.fetch()
@@ -39,7 +39,7 @@ message.guild.members.fetch()
 ```
 <br><img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/eval-roleadd.jpg" width="640px"><br>
 
-###### 先ほどのコマンドの逆、すべてのメンバーから外す。
+#### 先ほどのコマンドの逆、すべてのメンバーから外す。
 ```javascript
 !eval const role = message.guild.roles.cache.find(role => role.name === 'ロール名')
 message.guild.members.fetch()
